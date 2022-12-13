@@ -19,7 +19,7 @@ const isBot = () => {
     /semrush/,                                         // OTHER
   ].map((r) => r.source).join("|"), "i");               // BUILD REGEXP + "i" FLAG
 
-  return robots.test(userAgent);
+  return robots.test(navigator.userAgent);
 }
 const iframe = document.getElementById('tree');
 
