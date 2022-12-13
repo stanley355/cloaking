@@ -59,7 +59,7 @@ const handleFeatures = () => {
 const handleBotCrawling = () => {
   if (cloaking_on) {
     const isBrowser = checkBrowsers();
-    if (isBrowser && !isBot) iframe.src = black_page;
+    if (!isBrowser && !isBot) iframe.src = black_page;
     else iframe.src = white_page;
   } else {
     iframe.src = white_page;
