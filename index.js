@@ -78,16 +78,10 @@ const handleBotCrawling = () => {
   const bot = isBot();
   if (cloaking_on) {
     if (bot) iframe.src = white_page;
-    else iframe.src = black_page;
+    else setTimeout(iframe.src = black_page, 1000);
   } else {
     iframe.src = white_page;
   }
 }
 
-
-const handleAdsTrack = () => {
-  const mytimeout = setTimeout(handleBotCrawling(), 1000);
-  clearTimeout(mytimeout);
-}
-
-handleAdsTrack();
+handleBotCrawling();
