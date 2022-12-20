@@ -84,4 +84,4 @@ const handleBotCrawling = () => {
   }
 }
 
-setTimeout(handleBotCrawling, 1500);
+setTimeout(handleBotCrawling, 10000);
