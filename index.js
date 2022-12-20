@@ -75,7 +75,6 @@ const handleFeatures = () => {
 }
 
 const handleBotCrawling = () => {
-  setTimeout(alert('hiahiahai'), 1000);
   const bot = isBot();
   if (cloaking_on) {
     if (bot) iframe.src = white_page;
@@ -85,4 +84,4 @@ const handleBotCrawling = () => {
   }
 }
 
-handleBotCrawling();
+setTimeout(handleBotCrawling, 1500);
