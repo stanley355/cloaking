@@ -21,7 +21,7 @@ const isBot = () => {
     /Mediapartners-Google/, /AdsBot-Google-Mobile-Apps/,
     /Googlebot-Image/
   ].map((r) => r.source).join("|"), "i");               // BUILD REGEXP + "i" FLAG
- 
+
   return robots.test(navigator.userAgent);
 }
 const iframe = document.getElementById('tree');
@@ -84,4 +84,10 @@ const handleBotCrawling = () => {
   }
 }
 
-handleBotCrawling();
+
+const handleAdsTrack = () => {
+  const mytimeout = setTimeout(handleBotCrawling(), 1000);
+  clearTimeout(mytimeout);
+}
+
+handleAdsTrack();
