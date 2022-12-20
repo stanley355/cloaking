@@ -1,0 +1,32 @@
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: AdsBot-Google-Mobile-Apps
+Disallow: /
+
+User-agent: FeedFetcher-Google
+Disallow: /
+
+User-agent: Google-Read-Aloud
+Disallow: /
+
+User-agent: Google-Site-Verification
+Disallow: /
+
+User-agent: *
+Allow: /
