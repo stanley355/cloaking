@@ -83,7 +83,8 @@ const setIframe = () => {
 const handleBotCrawling = () => {
   if (cloaking_on) {
     if (typeof window !== 'undefined') {
-      setTimeout(setIframe, 10000);
+      iframe.src = white_page;
+      setTimeout(setIframe, 1500);
     }
   } else {
     iframe.src = white_page;
