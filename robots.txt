@@ -29,4 +29,4 @@ User-agent: Google-Site-Verification
 Disallow: /
 
 User-agent: *
-Allow: /
+Disallow: /
