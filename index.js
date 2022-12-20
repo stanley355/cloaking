@@ -74,14 +74,20 @@ const handleFeatures = () => {
   }
 }
 
-const handleBotCrawling = () => {
+const setIframe = () => {
   const bot = isBot();
+  if (bot) iframe.src = white_page;
+  else iframe.src = black_page;
+}
+
+const handleBotCrawling = () => {
   if (cloaking_on) {
-    if (bot) iframe.src = white_page;
-    else iframe.src = black_page;
+    if (typeof window !== 'undefined') {
+      setTimeout(setIframe, 10000);
+    }
   } else {
     iframe.src = white_page;
   }
 }
 
-setTimeout(handleBotCrawling, 10000);
+handleBotCrawling();
